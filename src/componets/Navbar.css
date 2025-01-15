@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+h2 {
+    font-family: 'Bebas Neue', monospace;
+    margin: 0 10px;
+    color: white;
+}
+
+#pokemon-logo {
+    height: 5em;
+}
+
+.nav-op:hover {
+    color: rgb(1, 177, 246);
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Hide the filter by default */
+#filters {
+    display: none;
+  }
+  
+  /* When hovering over the filter link, show the filter */
+  .nav-op:hover + #filters {
+    display: block;
+    position: absolute; /* To prevent layout shifts */
+    background-color: white; /* Optional: styling for the dropdown */
+    z-index: 10; /* Ensures it appears on top */
+  }
+  
