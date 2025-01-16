@@ -3,7 +3,7 @@ import Navbar from '../componets/Navbar';
 import Searchbar from '../componets/Searchbar';
 import Card from '../componets/Card';
 import { fetchPokemonDetails } from '../utils/pokemonUtils';
-import './home.css';
+import './Home.css';
 
 const Home = () => {
   const offsetArr = [0, 151, 251, 386, 493, 565, 651, 747, 867];
