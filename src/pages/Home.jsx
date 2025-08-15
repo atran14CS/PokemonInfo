@@ -42,7 +42,7 @@ const Home = () => {
       <Searchbar setSearchActive={setSearchActive} setSearchPokemon={setSearchPokemon}/>
       <div className="pokemon-list">
         {loading ? (
-          <p>Please wait... Loading Pokémon data...</p>
+          <p className='LoadinText'>Please wait... Loading Pokémon data...</p>
         ) : (
           (searchActive ? searchPokemon : pokemon).map((poke, index) => (
             <Card key={index} name={poke.name} sprite={poke.sprite} id={poke.number} />
